@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww50520\viewh26700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Prerequisite:\
+\
+VCSA Installed\
+Folder structure built out\
+Domain Controller built and VCSA joined to the domain \
+\
+PowerCLI installed, or PowerShell w/ PowerCLI package installed\
+\
+How to Use:\
+\
+Open PowerCLI or PowerShell and navigate to folder containing the scripts\
+\
+Run permScript.ps1.    # ./permScript.ps1\
+Enter vCenter IP address \
+Enter the Domain\
+Enter the numeric site code. \
+Enter local administrator account. E.g administrator@vsphere.local\
+Enter directory of the script folder.  Most likely is \'91.\\\'92\
+Enter the Datacenter name, as listed in vCenter\
+\
+\
+IMPORTANT:\
+\
+This script will not apply global permissions.  The following will need to be entered by hand.  \
+\
+In vCenter > Menu > Administration > Global Permissions > Add\
+\
+Group:                          			Role Assigned:\
+\
+Example Group 1			Administrator\
+Example Group 2			Read Only\
+Example Group 3			Read Only\
+\
+\
+INTIAL SETUP: \
+\
+To generate the XML file containing the permissions, hand-jam this once via vCenter and export it.  Can be done via the GUI.   The actual mapping of roles to AD users is also a fairly dumb/hard coded PS script.  Meant to go back and improve this, but\'85 A temp fix is only temp if it works. }

@@ -1,0 +1,1291 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>VMware.VimAutomation.ViCore.Impl.V1.PermissionManagement.RoleImpl</T>
+      <T>VMware.VimAutomation.ViCore.Util10.VersionedObjectImpl</T>
+      <T>System.Object</T>
+    </TN>
+    <ToString>VirtualMachinePowerUser</ToString>
+    <Props>
+      <S N="Description">Provides virtual machine interaction and configuration permissions</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="1">
+        <TN RefId="1">
+          <T>System.String[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Datastore.Browse</S>
+          <S>Global.CancelTask</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Config.AddExistingDisk</S>
+          <S>VirtualMachine.Config.AddNewDisk</S>
+          <S>VirtualMachine.Config.AddRemoveDevice</S>
+          <S>VirtualMachine.Config.AdvancedConfig</S>
+          <S>VirtualMachine.Config.CPUCount</S>
+          <S>VirtualMachine.Config.DiskLease</S>
+          <S>VirtualMachine.Config.EditDevice</S>
+          <S>VirtualMachine.Config.Memory</S>
+          <S>VirtualMachine.Config.RemoveDisk</S>
+          <S>VirtualMachine.Config.Rename</S>
+          <S>VirtualMachine.Config.ResetGuestInfo</S>
+          <S>VirtualMachine.Config.Resource</S>
+          <S>VirtualMachine.Config.Settings</S>
+          <S>VirtualMachine.Config.UpgradeVirtualHardware</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.GuestControl</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Obj N="Server" RefId="2">
+        <TN RefId="2">
+          <T>VMware.VimAutomation.ViCore.Impl.V1.VIServerImpl</T>
+          <T>VMware.VimAutomation.ViCore.Util10.VersionedObjectImpl</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>192.168.1.4</ToString>
+        <Props>
+          <B N="IsConnected">true</B>
+          <S N="Id">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+          <URI N="ServiceUri">https://192.168.1.4/sdk</URI>
+          <S N="SessionSecret">"b615b188b7101abfc06a6b9e01193f340bedf5ff"</S>
+          <S N="Name">192.168.1.4</S>
+          <I32 N="Port">443</I32>
+          <S N="SessionId">"b615b188b7101abfc06a6b9e01193f340bedf5ff"</S>
+          <S N="User">VSPHERE.LOCAL\Administrator</S>
+          <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+          <S N="Version">6.7.0</S>
+          <S N="Build">14368073</S>
+          <S N="ProductLine">vpx</S>
+          <S N="InstanceUuid">2b26a7a8-1153-4396-b3f3-40bcaa4f8c56</S>
+          <I32 N="RefCount">6</I32>
+          <S N="ExtensionData">VMware.Vim.ServiceInstance</S>
+        </Props>
+      </Obj>
+      <I32 N="Id">4</I32>
+      <S N="Name">VirtualMachinePowerUser</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=4/</S>
+      <Obj N="ExtensionData" RefId="3">
+        <TN RefId="3">
+          <T>VMware.Vim.AuthorizationRole</T>
+          <T>VMware.Vim.DynamicData</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">4</I32>
+          <B N="System">false</B>
+          <S N="Name">VirtualMachinePowerUser</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="1" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <ToString>VirtualMachineUser</ToString>
+    <Props>
+      <S N="Description">Provides virtual machine interaction permissions</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="5">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Global.CancelTask</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">5</I32>
+      <S N="Name">VirtualMachineUser</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=5/</S>
+      <Obj N="ExtensionData" RefId="6">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">5</I32>
+          <B N="System">false</B>
+          <S N="Name">VirtualMachineUser</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="5" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="7">
+    <TNRef RefId="0" />
+    <ToString>ResourcePoolAdministrator</ToString>
+    <Props>
+      <S N="Description">Supports delegated resource management</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="8">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Alarm.Create</S>
+          <S>Alarm.Delete</S>
+          <S>Alarm.Edit</S>
+          <S>Authorization.ModifyPermissions</S>
+          <S>Datastore.Browse</S>
+          <S>Folder.Create</S>
+          <S>Folder.Delete</S>
+          <S>Folder.Move</S>
+          <S>Folder.Rename</S>
+          <S>Global.CancelTask</S>
+          <S>Global.LogEvent</S>
+          <S>Global.SetCustomField</S>
+          <S>Resource.AssignVMToPool</S>
+          <S>Resource.ColdMigrate</S>
+          <S>Resource.CreatePool</S>
+          <S>Resource.DeletePool</S>
+          <S>Resource.EditPool</S>
+          <S>Resource.HotMigrate</S>
+          <S>Resource.MovePool</S>
+          <S>Resource.QueryVMotion</S>
+          <S>Resource.RenamePool</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Config.AddExistingDisk</S>
+          <S>VirtualMachine.Config.AddNewDisk</S>
+          <S>VirtualMachine.Config.AddRemoveDevice</S>
+          <S>VirtualMachine.Config.AdvancedConfig</S>
+          <S>VirtualMachine.Config.CPUCount</S>
+          <S>VirtualMachine.Config.DiskLease</S>
+          <S>VirtualMachine.Config.EditDevice</S>
+          <S>VirtualMachine.Config.Memory</S>
+          <S>VirtualMachine.Config.RawDevice</S>
+          <S>VirtualMachine.Config.RemoveDisk</S>
+          <S>VirtualMachine.Config.Rename</S>
+          <S>VirtualMachine.Config.ResetGuestInfo</S>
+          <S>VirtualMachine.Config.Resource</S>
+          <S>VirtualMachine.Config.Settings</S>
+          <S>VirtualMachine.Config.UpgradeVirtualHardware</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+          <S>VirtualMachine.Inventory.Create</S>
+          <S>VirtualMachine.Inventory.CreateFromExisting</S>
+          <S>VirtualMachine.Inventory.Delete</S>
+          <S>VirtualMachine.Inventory.Move</S>
+          <S>VirtualMachine.Inventory.Register</S>
+          <S>VirtualMachine.Inventory.Unregister</S>
+          <S>VirtualMachine.Provisioning.Clone</S>
+          <S>VirtualMachine.Provisioning.CloneTemplate</S>
+          <S>VirtualMachine.Provisioning.CreateTemplateFromVM</S>
+          <S>VirtualMachine.Provisioning.Customize</S>
+          <S>VirtualMachine.Provisioning.DeployTemplate</S>
+          <S>VirtualMachine.Provisioning.DiskRandomAccess</S>
+          <S>VirtualMachine.Provisioning.DiskRandomRead</S>
+          <S>VirtualMachine.Provisioning.GetVmFiles</S>
+          <S>VirtualMachine.Provisioning.MarkAsTemplate</S>
+          <S>VirtualMachine.Provisioning.MarkAsVM</S>
+          <S>VirtualMachine.Provisioning.ModifyCustSpecs</S>
+          <S>VirtualMachine.Provisioning.PutVmFiles</S>
+          <S>VirtualMachine.Provisioning.ReadCustSpecs</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">6</I32>
+      <S N="Name">ResourcePoolAdministrator</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=6/</S>
+      <Obj N="ExtensionData" RefId="9">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">6</I32>
+          <B N="System">false</B>
+          <S N="Name">ResourcePoolAdministrator</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="8" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <ToString>VMwareConsolidatedBackupUser</ToString>
+    <Props>
+      <S N="Description">Used by the Consolidated Backup utility</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="11">
+        <TNRef RefId="1" />
+        <LST>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Config.DiskLease</S>
+          <S>VirtualMachine.Provisioning.DiskRandomRead</S>
+          <S>VirtualMachine.Provisioning.GetVmFiles</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">7</I32>
+      <S N="Name">VMwareConsolidatedBackupUser</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=7/</S>
+      <Obj N="ExtensionData" RefId="12">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">7</I32>
+          <B N="System">false</B>
+          <S N="Name">VMwareConsolidatedBackupUser</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="11" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="13">
+    <TNRef RefId="0" />
+    <ToString>DatastoreConsumer</ToString>
+    <Props>
+      <S N="Description">Assigned to datastores to allow creating disks or snapshots</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="14">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Datastore.AllocateSpace</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">8</I32>
+      <S N="Name">DatastoreConsumer</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=8/</S>
+      <Obj N="ExtensionData" RefId="15">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">8</I32>
+          <B N="System">false</B>
+          <S N="Name">DatastoreConsumer</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="14" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="16">
+    <TNRef RefId="0" />
+    <ToString>NetworkConsumer</ToString>
+    <Props>
+      <S N="Description">Assigned to networks to allow association of virtual machines or hosts with networks</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="17">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Network.Assign</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">9</I32>
+      <S N="Name">NetworkConsumer</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=9/</S>
+      <Obj N="ExtensionData" RefId="18">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">9</I32>
+          <B N="System">false</B>
+          <S N="Name">NetworkConsumer</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="17" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="19">
+    <TNRef RefId="0" />
+    <ToString>VirtualMachineConsoleUser</ToString>
+    <Props>
+      <S N="Description">Provides virtual machine console interaction permissions. This role is required for VMRC sessions. Exercise caution when altering/removing this role from vCenter Server.</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="20">
+        <TNRef RefId="1" />
+        <LST>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">10</I32>
+      <S N="Name">VirtualMachineConsoleUser</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=10/</S>
+      <Obj N="ExtensionData" RefId="21">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">10</I32>
+          <B N="System">false</B>
+          <S N="Name">VirtualMachineConsoleUser</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="20" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="22">
+    <TNRef RefId="0" />
+    <ToString>AutoUpdateUser</ToString>
+    <Props>
+      <S N="Description">AutoUpdateUser</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="23">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Global.LogEvent</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">11</I32>
+      <S N="Name">AutoUpdateUser</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=11/</S>
+      <Obj N="ExtensionData" RefId="24">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">11</I32>
+          <B N="System">false</B>
+          <S N="Name">AutoUpdateUser</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="23" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="25">
+    <TNRef RefId="0" />
+    <ToString>InventoryService.Tagging.TaggingAdmin</ToString>
+    <Props>
+      <S N="Description">InventoryService.Tagging.TaggingAdmin</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="26">
+        <TNRef RefId="1" />
+        <LST>
+          <S>InventoryService.Tagging.AttachTag</S>
+          <S>InventoryService.Tagging.CreateCategory</S>
+          <S>InventoryService.Tagging.CreateTag</S>
+          <S>InventoryService.Tagging.DeleteCategory</S>
+          <S>InventoryService.Tagging.DeleteTag</S>
+          <S>InventoryService.Tagging.EditCategory</S>
+          <S>InventoryService.Tagging.EditTag</S>
+          <S>InventoryService.Tagging.ModifyUsedByForCategory</S>
+          <S>InventoryService.Tagging.ModifyUsedByForTag</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">1001</I32>
+      <S N="Name">InventoryService.Tagging.TaggingAdmin</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=1001/</S>
+      <Obj N="ExtensionData" RefId="27">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">1001</I32>
+          <B N="System">false</B>
+          <S N="Name">InventoryService.Tagging.TaggingAdmin</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="26" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="28">
+    <TNRef RefId="0" />
+    <ToString>vSphere Client Solution User</ToString>
+    <Props>
+      <S N="Description">vSphere Client Solution User</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="29">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Extension.Register</S>
+          <S>Extension.Unregister</S>
+          <S>Extension.Update</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>Task.Create</S>
+          <S>Task.Update</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">1003</I32>
+      <S N="Name">vSphere Client Solution User</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=1003/</S>
+      <Obj N="ExtensionData" RefId="30">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">1003</I32>
+          <B N="System">false</B>
+          <S N="Name">vSphere Client Solution User</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="29" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="31">
+    <TNRef RefId="0" />
+    <ToString>Cloud Manager</ToString>
+    <Props>
+      <S N="Description">Cloud Manager</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="32">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Alarm.Acknowledge</S>
+          <S>Alarm.Create</S>
+          <S>Alarm.Delete</S>
+          <S>Alarm.DisableActions</S>
+          <S>Alarm.Edit</S>
+          <S>Alarm.SetStatus</S>
+          <S>AutoDeploy.Host.AssociateMachine</S>
+          <S>AutoDeploy.Profile.Create</S>
+          <S>AutoDeploy.Profile.Edit</S>
+          <S>AutoDeploy.Rule.Create</S>
+          <S>AutoDeploy.Rule.Delete</S>
+          <S>AutoDeploy.Rule.Edit</S>
+          <S>AutoDeploy.RuleSet.Activate</S>
+          <S>AutoDeploy.RuleSet.Edit</S>
+          <S>Certificate.Manage</S>
+          <S>CertificateManagement.Administer</S>
+          <S>CertificateManagement.Manage</S>
+          <S>Cns.Searchable</S>
+          <S>ContentLibrary.AddLibraryItem</S>
+          <S>ContentLibrary.AddSubscription</S>
+          <S>ContentLibrary.CreateLocalLibrary</S>
+          <S>ContentLibrary.CreateSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteLibraryItem</S>
+          <S>ContentLibrary.DeleteLocalLibrary</S>
+          <S>ContentLibrary.DeleteSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteSubscription</S>
+          <S>ContentLibrary.DownloadSession</S>
+          <S>ContentLibrary.EvictLibraryItem</S>
+          <S>ContentLibrary.EvictSubscribedLibrary</S>
+          <S>ContentLibrary.GetConfiguration</S>
+          <S>ContentLibrary.ImportStorage</S>
+          <S>ContentLibrary.ProbeSubscription</S>
+          <S>ContentLibrary.PublishLibrary</S>
+          <S>ContentLibrary.PublishLibraryItem</S>
+          <S>ContentLibrary.ReadStorage</S>
+          <S>ContentLibrary.SyncLibrary</S>
+          <S>ContentLibrary.SyncLibraryItem</S>
+          <S>ContentLibrary.TypeIntrospection</S>
+          <S>ContentLibrary.UpdateConfiguration</S>
+          <S>ContentLibrary.UpdateLibrary</S>
+          <S>ContentLibrary.UpdateLibraryItem</S>
+          <S>ContentLibrary.UpdateLocalLibrary</S>
+          <S>ContentLibrary.UpdateSession</S>
+          <S>ContentLibrary.UpdateSubscribedLibrary</S>
+          <S>ContentLibrary.UpdateSubscription</S>
+          <S>Cryptographer.Access</S>
+          <S>Cryptographer.AddDisk</S>
+          <S>Cryptographer.Clone</S>
+          <S>Cryptographer.Decrypt</S>
+          <S>Cryptographer.Encrypt</S>
+          <S>Cryptographer.EncryptNew</S>
+          <S>Cryptographer.ManageEncryptionPolicy</S>
+          <S>Cryptographer.ManageKeyServers</S>
+          <S>Cryptographer.ManageKeys</S>
+          <S>Cryptographer.Migrate</S>
+          <S>Cryptographer.Recrypt</S>
+          <S>Cryptographer.RegisterHost</S>
+          <S>Cryptographer.RegisterVM</S>
+          <S>DVPortgroup.Create</S>
+          <S>DVPortgroup.Delete</S>
+          <S>DVPortgroup.Ipfix</S>
+          <S>DVPortgroup.Modify</S>
+          <S>DVPortgroup.PolicyOp</S>
+          <S>DVPortgroup.ScopeOp</S>
+          <S>DVSwitch.Create</S>
+          <S>DVSwitch.Delete</S>
+          <S>DVSwitch.HostOp</S>
+          <S>DVSwitch.Ipfix</S>
+          <S>DVSwitch.Modify</S>
+          <S>DVSwitch.Move</S>
+          <S>DVSwitch.PolicyOp</S>
+          <S>DVSwitch.PortConfig</S>
+          <S>DVSwitch.PortSetting</S>
+          <S>DVSwitch.ResourceManagement</S>
+          <S>DVSwitch.Vspan</S>
+          <S>Datacenter.Create</S>
+          <S>Datacenter.Delete</S>
+          <S>Datacenter.IpPoolConfig</S>
+          <S>Datacenter.IpPoolQueryAllocations</S>
+          <S>Datacenter.IpPoolReleaseIp</S>
+          <S>Datacenter.Move</S>
+          <S>Datacenter.Reconfigure</S>
+          <S>Datacenter.Rename</S>
+          <S>Datastore.AllocateSpace</S>
+          <S>Datastore.Browse</S>
+          <S>Datastore.Config</S>
+          <S>Datastore.Delete</S>
+          <S>Datastore.DeleteFile</S>
+          <S>Datastore.FileManagement</S>
+          <S>Datastore.Move</S>
+          <S>Datastore.Rename</S>
+          <S>Datastore.UpdateVirtualMachineFiles</S>
+          <S>Datastore.UpdateVirtualMachineMetadata</S>
+          <S>EAM.Config</S>
+          <S>EAM.Modify</S>
+          <S>EAM.View</S>
+          <S>Extension.Register</S>
+          <S>Extension.Unregister</S>
+          <S>Extension.Update</S>
+          <S>ExternalStatsProvider.Register</S>
+          <S>ExternalStatsProvider.Unregister</S>
+          <S>ExternalStatsProvider.Update</S>
+          <S>Folder.Create</S>
+          <S>Folder.Delete</S>
+          <S>Folder.Move</S>
+          <S>Folder.Rename</S>
+          <S>Global.CancelTask</S>
+          <S>Global.CapacityPlanning</S>
+          <S>Global.Diagnostics</S>
+          <S>Global.DisableMethods</S>
+          <S>Global.EnableMethods</S>
+          <S>Global.GlobalTag</S>
+          <S>Global.Health</S>
+          <S>Global.Licenses</S>
+          <S>Global.LogEvent</S>
+          <S>Global.ManageCustomFields</S>
+          <S>Global.Proxy</S>
+          <S>Global.ScriptAction</S>
+          <S>Global.ServiceManagers</S>
+          <S>Global.SetCustomField</S>
+          <S>Global.Settings</S>
+          <S>Global.SystemTag</S>
+          <S>Global.VCServer</S>
+          <S>HealthUpdateProvider.Register</S>
+          <S>HealthUpdateProvider.Unregister</S>
+          <S>HealthUpdateProvider.Update</S>
+          <S>Host.Cim.CimInteraction</S>
+          <S>Host.Config.AdvancedConfig</S>
+          <S>Host.Config.AuthenticationStore</S>
+          <S>Host.Config.AutoStart</S>
+          <S>Host.Config.Connection</S>
+          <S>Host.Config.DateTime</S>
+          <S>Host.Config.Firmware</S>
+          <S>Host.Config.HyperThreading</S>
+          <S>Host.Config.Image</S>
+          <S>Host.Config.Maintenance</S>
+          <S>Host.Config.Memory</S>
+          <S>Host.Config.NetService</S>
+          <S>Host.Config.Network</S>
+          <S>Host.Config.Nvdimm</S>
+          <S>Host.Config.Patch</S>
+          <S>Host.Config.PciPassthru</S>
+          <S>Host.Config.Power</S>
+          <S>Host.Config.Quarantine</S>
+          <S>Host.Config.Resources</S>
+          <S>Host.Config.Settings</S>
+          <S>Host.Config.Snmp</S>
+          <S>Host.Config.Storage</S>
+          <S>Host.Config.SystemManagement</S>
+          <S>Host.Hbr.HbrManagement</S>
+          <S>Host.Inventory.AddHostToCluster</S>
+          <S>Host.Inventory.AddStandaloneHost</S>
+          <S>Host.Inventory.CreateCluster</S>
+          <S>Host.Inventory.DeleteCluster</S>
+          <S>Host.Inventory.EditCluster</S>
+          <S>Host.Inventory.MoveCluster</S>
+          <S>Host.Inventory.MoveHost</S>
+          <S>Host.Inventory.RemoveHostFromCluster</S>
+          <S>Host.Inventory.RenameCluster</S>
+          <S>Host.Local.CreateVM</S>
+          <S>Host.Local.DeleteVM</S>
+          <S>Host.Local.InstallAgent</S>
+          <S>Host.Local.ManageUserGroups</S>
+          <S>Host.Local.ReconfigVM</S>
+          <S>InventoryService.Tagging.AttachTag</S>
+          <S>InventoryService.Tagging.CreateCategory</S>
+          <S>InventoryService.Tagging.CreateTag</S>
+          <S>InventoryService.Tagging.DeleteCategory</S>
+          <S>InventoryService.Tagging.DeleteTag</S>
+          <S>InventoryService.Tagging.EditCategory</S>
+          <S>InventoryService.Tagging.EditTag</S>
+          <S>InventoryService.Tagging.ModifyUsedByForCategory</S>
+          <S>InventoryService.Tagging.ModifyUsedByForTag</S>
+          <S>Network.Assign</S>
+          <S>Network.Config</S>
+          <S>Network.Delete</S>
+          <S>Network.Move</S>
+          <S>Performance.ModifyIntervals</S>
+          <S>Profile.Clear</S>
+          <S>Profile.Create</S>
+          <S>Profile.Delete</S>
+          <S>Profile.Edit</S>
+          <S>Profile.Export</S>
+          <S>Profile.View</S>
+          <S>Resource.ApplyRecommendation</S>
+          <S>Resource.AssignVAppToPool</S>
+          <S>Resource.AssignVMToPool</S>
+          <S>Resource.ColdMigrate</S>
+          <S>Resource.CreatePool</S>
+          <S>Resource.DeletePool</S>
+          <S>Resource.EditPool</S>
+          <S>Resource.HotMigrate</S>
+          <S>Resource.MovePool</S>
+          <S>Resource.QueryVMotion</S>
+          <S>Resource.RenamePool</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>Sessions.GlobalMessage</S>
+          <S>Sessions.ImpersonateUser</S>
+          <S>Sessions.TerminateSession</S>
+          <S>Sessions.ValidateSession</S>
+          <S>StoragePod.Config</S>
+          <S>StorageProfile.Update</S>
+          <S>StorageProfile.View</S>
+          <S>StorageViews.ConfigureService</S>
+          <S>StorageViews.View</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>Task.Create</S>
+          <S>Task.Update</S>
+          <S>TransferService.Manage</S>
+          <S>TransferService.Monitor</S>
+          <S>VApp.ApplicationConfig</S>
+          <S>VApp.AssignResourcePool</S>
+          <S>VApp.AssignVApp</S>
+          <S>VApp.AssignVM</S>
+          <S>VApp.Clone</S>
+          <S>VApp.Create</S>
+          <S>VApp.Delete</S>
+          <S>VApp.Export</S>
+          <S>VApp.ExtractOvfEnvironment</S>
+          <S>VApp.Import</S>
+          <S>VApp.InstanceConfig</S>
+          <S>VApp.ManagedByConfig</S>
+          <S>VApp.Move</S>
+          <S>VApp.PowerOff</S>
+          <S>VApp.PowerOn</S>
+          <S>VApp.Rename</S>
+          <S>VApp.ResourceConfig</S>
+          <S>VApp.Suspend</S>
+          <S>VApp.Unregister</S>
+          <S>VcIntegrity.Baseline.com.vmware.vcIntegrity.AssignBaselines</S>
+          <S>VcIntegrity.Baseline.com.vmware.vcIntegrity.ManageBaselines</S>
+          <S>VcIntegrity.FileUpload.com.vmware.vcIntegrity.ImportFile</S>
+          <S>VcIntegrity.General.com.vmware.vcIntegrity.Configure</S>
+          <S>VcIntegrity.Updates.com.vmware.vcIntegrity.Remediate</S>
+          <S>VcIntegrity.Updates.com.vmware.vcIntegrity.Scan</S>
+          <S>VcIntegrity.Updates.com.vmware.vcIntegrity.Stage</S>
+          <S>VcIntegrity.Updates.com.vmware.vcIntegrity.ViewStatus</S>
+          <S>VirtualMachine.Config.AddExistingDisk</S>
+          <S>VirtualMachine.Config.AddNewDisk</S>
+          <S>VirtualMachine.Config.AddRemoveDevice</S>
+          <S>VirtualMachine.Config.AdvancedConfig</S>
+          <S>VirtualMachine.Config.Annotation</S>
+          <S>VirtualMachine.Config.CPUCount</S>
+          <S>VirtualMachine.Config.ChangeTracking</S>
+          <S>VirtualMachine.Config.DiskExtend</S>
+          <S>VirtualMachine.Config.DiskLease</S>
+          <S>VirtualMachine.Config.EditDevice</S>
+          <S>VirtualMachine.Config.HostUSBDevice</S>
+          <S>VirtualMachine.Config.ManagedBy</S>
+          <S>VirtualMachine.Config.Memory</S>
+          <S>VirtualMachine.Config.MksControl</S>
+          <S>VirtualMachine.Config.QueryFTCompatibility</S>
+          <S>VirtualMachine.Config.QueryUnownedFiles</S>
+          <S>VirtualMachine.Config.RawDevice</S>
+          <S>VirtualMachine.Config.ReloadFromPath</S>
+          <S>VirtualMachine.Config.RemoveDisk</S>
+          <S>VirtualMachine.Config.Rename</S>
+          <S>VirtualMachine.Config.ResetGuestInfo</S>
+          <S>VirtualMachine.Config.Resource</S>
+          <S>VirtualMachine.Config.Settings</S>
+          <S>VirtualMachine.Config.SwapPlacement</S>
+          <S>VirtualMachine.Config.ToggleForkParent</S>
+          <S>VirtualMachine.Config.UpgradeVirtualHardware</S>
+          <S>VirtualMachine.GuestOperations.Execute</S>
+          <S>VirtualMachine.GuestOperations.Modify</S>
+          <S>VirtualMachine.GuestOperations.ModifyAliases</S>
+          <S>VirtualMachine.GuestOperations.Query</S>
+          <S>VirtualMachine.GuestOperations.QueryAliases</S>
+          <S>VirtualMachine.Hbr.ConfigureReplication</S>
+          <S>VirtualMachine.Hbr.MonitorReplication</S>
+          <S>VirtualMachine.Hbr.ReplicaManagement</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.Backup</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.CreateScreenshot</S>
+          <S>VirtualMachine.Interact.CreateSecondary</S>
+          <S>VirtualMachine.Interact.DefragmentAllDisks</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.DisableSecondary</S>
+          <S>VirtualMachine.Interact.DnD</S>
+          <S>VirtualMachine.Interact.EnableSecondary</S>
+          <S>VirtualMachine.Interact.GuestControl</S>
+          <S>VirtualMachine.Interact.MakePrimary</S>
+          <S>VirtualMachine.Interact.Pause</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.PutUsbScanCodes</S>
+          <S>VirtualMachine.Interact.Record</S>
+          <S>VirtualMachine.Interact.Replay</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SESparseMaintenance</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.TerminateFaultTolerantVM</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+          <S>VirtualMachine.Interact.TurnOffFaultTolerance</S>
+          <S>VirtualMachine.Inventory.Create</S>
+          <S>VirtualMachine.Inventory.CreateFromExisting</S>
+          <S>VirtualMachine.Inventory.Delete</S>
+          <S>VirtualMachine.Inventory.Move</S>
+          <S>VirtualMachine.Inventory.Register</S>
+          <S>VirtualMachine.Inventory.Unregister</S>
+          <S>VirtualMachine.Namespace.Event</S>
+          <S>VirtualMachine.Namespace.EventNotify</S>
+          <S>VirtualMachine.Namespace.Management</S>
+          <S>VirtualMachine.Namespace.ModifyContent</S>
+          <S>VirtualMachine.Namespace.Query</S>
+          <S>VirtualMachine.Namespace.ReadContent</S>
+          <S>VirtualMachine.Provisioning.Clone</S>
+          <S>VirtualMachine.Provisioning.CloneTemplate</S>
+          <S>VirtualMachine.Provisioning.CreateTemplateFromVM</S>
+          <S>VirtualMachine.Provisioning.Customize</S>
+          <S>VirtualMachine.Provisioning.DeployTemplate</S>
+          <S>VirtualMachine.Provisioning.DiskRandomAccess</S>
+          <S>VirtualMachine.Provisioning.DiskRandomRead</S>
+          <S>VirtualMachine.Provisioning.FileRandomAccess</S>
+          <S>VirtualMachine.Provisioning.GetVmFiles</S>
+          <S>VirtualMachine.Provisioning.MarkAsTemplate</S>
+          <S>VirtualMachine.Provisioning.MarkAsVM</S>
+          <S>VirtualMachine.Provisioning.ModifyCustSpecs</S>
+          <S>VirtualMachine.Provisioning.PromoteDisks</S>
+          <S>VirtualMachine.Provisioning.PutVmFiles</S>
+          <S>VirtualMachine.Provisioning.ReadCustSpecs</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+          <S>Vsan.Cluster.ShallowRekey</S>
+    
+          <S>vService.CreateDependency</S>
+          <S>vService.DestroyDependency</S>
+          <S>vService.ReconfigureDependency</S>
+          <S>vService.UpdateDependency</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">129943194</I32>
+      <S N="Name">Cloud Manager</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=129943194/</S>
+      <Obj N="ExtensionData" RefId="33">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">129943194</I32>
+          <B N="System">false</B>
+          <S N="Name">Cloud Manager</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="32" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="34">
+    <TNRef RefId="0" />
+    <ToString>Application Owner</ToString>
+    <Props>
+      <S N="Description">Application Owner</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="35">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Datastore.Browse</S>
+          <S>Global.CancelTask</S>
+          <S>Global.ManageCustomFields</S>
+          <S>Global.SetCustomField</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">260629280</I32>
+      <S N="Name">Application Owner</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=260629280/</S>
+      <Obj N="ExtensionData" RefId="36">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">260629280</I32>
+          <B N="System">false</B>
+          <S N="Name"> Application Owner</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="35" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="37">
+    <TNRef RefId="0" />
+    <ToString>Site Administrator</ToString>
+    <Props>
+      <S N="Description">Site Administrator</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="38">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Alarm.Acknowledge</S>
+          <S>Alarm.Create</S>
+          <S>Alarm.Delete</S>
+          <S>Alarm.DisableActions</S>
+          <S>Alarm.Edit</S>
+          <S>Alarm.SetStatus</S>
+          <S>ContentLibrary.AddLibraryItem</S>
+          <S>ContentLibrary.AddSubscription</S>
+          <S>ContentLibrary.CreateLocalLibrary</S>
+          <S>ContentLibrary.CreateSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteLibraryItem</S>
+          <S>ContentLibrary.DeleteLocalLibrary</S>
+          <S>ContentLibrary.DeleteSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteSubscription</S>
+          <S>ContentLibrary.DownloadSession</S>
+          <S>ContentLibrary.EvictLibraryItem</S>
+          <S>ContentLibrary.EvictSubscribedLibrary</S>
+          <S>ContentLibrary.GetConfiguration</S>
+          <S>ContentLibrary.ImportStorage</S>
+          <S>ContentLibrary.ProbeSubscription</S>
+          <S>ContentLibrary.PublishLibrary</S>
+          <S>ContentLibrary.PublishLibraryItem</S>
+          <S>ContentLibrary.ReadStorage</S>
+          <S>ContentLibrary.SyncLibrary</S>
+          <S>ContentLibrary.SyncLibraryItem</S>
+          <S>ContentLibrary.TypeIntrospection</S>
+          <S>ContentLibrary.UpdateConfiguration</S>
+          <S>ContentLibrary.UpdateLibrary</S>
+          <S>ContentLibrary.UpdateLibraryItem</S>
+          <S>ContentLibrary.UpdateLocalLibrary</S>
+          <S>ContentLibrary.UpdateSession</S>
+          <S>ContentLibrary.UpdateSubscribedLibrary</S>
+          <S>ContentLibrary.UpdateSubscription</S>
+          <S>Datastore.AllocateSpace</S>
+          <S>Datastore.Browse</S>
+          <S>Datastore.FileManagement</S>
+          <S>Datastore.UpdateVirtualMachineFiles</S>
+          <S>Datastore.UpdateVirtualMachineMetadata</S>
+          <S>EAM.View</S>
+          <S>Global.CancelTask</S>
+          <S>Global.CapacityPlanning</S>
+          <S>Global.Diagnostics</S>
+          <S>Global.DisableMethods</S>
+          <S>Global.EnableMethods</S>
+          <S>Global.GlobalTag</S>
+          <S>Global.Health</S>
+          <S>Global.Licenses</S>
+          <S>Global.LogEvent</S>
+          <S>Global.ManageCustomFields</S>
+          <S>Global.Proxy</S>
+          <S>Global.ScriptAction</S>
+          <S>Global.ServiceManagers</S>
+          <S>Global.SetCustomField</S>
+          <S>Global.Settings</S>
+          <S>Global.SystemTag</S>
+          <S>Global.VCServer</S>
+          <S>Host.Cim.CimInteraction</S>
+          <S>Host.Config.Maintenance</S>
+          <S>Host.Config.Patch</S>
+          <S>Host.Config.Power</S>
+          <S>Host.Config.Resources</S>
+          <S>Host.Config.SystemManagement</S>
+          <S>Host.Inventory.EditCluster</S>
+          <S>Host.Local.CreateVM</S>
+          <S>Host.Local.DeleteVM</S>
+          <S>Host.Local.InstallAgent</S>
+          <S>Host.Local.ManageUserGroups</S>
+          <S>Host.Local.ReconfigVM</S>
+          <S>Network.Assign</S>
+          <S>Performance.ModifyIntervals</S>
+          <S>Resource.AssignVMToPool</S>
+          <S>Resource.ColdMigrate</S>
+          <S>Resource.HotMigrate</S>
+          <S>Resource.QueryVMotion</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>Sessions.GlobalMessage</S>
+          <S>Sessions.ImpersonateUser</S>
+          <S>Sessions.TerminateSession</S>
+          <S>Sessions.ValidateSession</S>
+          <S>StorageProfile.Update</S>
+          <S>StorageProfile.View</S>
+          <S>StorageViews.View</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>Task.Create</S>
+          <S>Task.Update</S>
+          <S>TransferService.Manage</S>
+          <S>TransferService.Monitor</S>
+          <S>VirtualMachine.Config.AddExistingDisk</S>
+          <S>VirtualMachine.Config.AddNewDisk</S>
+          <S>VirtualMachine.Config.AddRemoveDevice</S>
+          <S>VirtualMachine.Config.AdvancedConfig</S>
+          <S>VirtualMachine.Config.Annotation</S>
+          <S>VirtualMachine.Config.CPUCount</S>
+          <S>VirtualMachine.Config.ChangeTracking</S>
+          <S>VirtualMachine.Config.DiskExtend</S>
+          <S>VirtualMachine.Config.DiskLease</S>
+          <S>VirtualMachine.Config.EditDevice</S>
+          <S>VirtualMachine.Config.HostUSBDevice</S>
+          <S>VirtualMachine.Config.ManagedBy</S>
+          <S>VirtualMachine.Config.Memory</S>
+          <S>VirtualMachine.Config.MksControl</S>
+          <S>VirtualMachine.Config.QueryFTCompatibility</S>
+          <S>VirtualMachine.Config.QueryUnownedFiles</S>
+          <S>VirtualMachine.Config.RawDevice</S>
+          <S>VirtualMachine.Config.ReloadFromPath</S>
+          <S>VirtualMachine.Config.RemoveDisk</S>
+          <S>VirtualMachine.Config.Rename</S>
+          <S>VirtualMachine.Config.ResetGuestInfo</S>
+          <S>VirtualMachine.Config.Resource</S>
+          <S>VirtualMachine.Config.Settings</S>
+          <S>VirtualMachine.Config.SwapPlacement</S>
+          <S>VirtualMachine.Config.ToggleForkParent</S>
+          <S>VirtualMachine.Config.UpgradeVirtualHardware</S>
+          <S>VirtualMachine.GuestOperations.Execute</S>
+          <S>VirtualMachine.GuestOperations.Modify</S>
+          <S>VirtualMachine.GuestOperations.ModifyAliases</S>
+          <S>VirtualMachine.GuestOperations.Query</S>
+          <S>VirtualMachine.GuestOperations.QueryAliases</S>
+          <S>VirtualMachine.Hbr.ConfigureReplication</S>
+          <S>VirtualMachine.Hbr.MonitorReplication</S>
+          <S>VirtualMachine.Hbr.ReplicaManagement</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.Backup</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.CreateScreenshot</S>
+          <S>VirtualMachine.Interact.CreateSecondary</S>
+          <S>VirtualMachine.Interact.DefragmentAllDisks</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.DisableSecondary</S>
+          <S>VirtualMachine.Interact.DnD</S>
+          <S>VirtualMachine.Interact.EnableSecondary</S>
+          <S>VirtualMachine.Interact.GuestControl</S>
+          <S>VirtualMachine.Interact.MakePrimary</S>
+          <S>VirtualMachine.Interact.Pause</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.PutUsbScanCodes</S>
+          <S>VirtualMachine.Interact.Record</S>
+          <S>VirtualMachine.Interact.Replay</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SESparseMaintenance</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.SetFloppyMedia</S>
+          <S>VirtualMachine.Interact.Suspend</S>
+          <S>VirtualMachine.Interact.TerminateFaultTolerantVM</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+          <S>VirtualMachine.Interact.TurnOffFaultTolerance</S>
+          <S>VirtualMachine.Inventory.Create</S>
+          <S>VirtualMachine.Inventory.CreateFromExisting</S>
+          <S>VirtualMachine.Inventory.Delete</S>
+          <S>VirtualMachine.Inventory.Move</S>
+          <S>VirtualMachine.Inventory.Register</S>
+          <S>VirtualMachine.Inventory.Unregister</S>
+          <S>VirtualMachine.Namespace.Event</S>
+          <S>VirtualMachine.Namespace.EventNotify</S>
+          <S>VirtualMachine.Namespace.Management</S>
+          <S>VirtualMachine.Namespace.ModifyContent</S>
+          <S>VirtualMachine.Namespace.Query</S>
+          <S>VirtualMachine.Namespace.ReadContent</S>
+          <S>VirtualMachine.Provisioning.Clone</S>
+          <S>VirtualMachine.Provisioning.CloneTemplate</S>
+          <S>VirtualMachine.Provisioning.CreateTemplateFromVM</S>
+          <S>VirtualMachine.Provisioning.Customize</S>
+          <S>VirtualMachine.Provisioning.DeployTemplate</S>
+          <S>VirtualMachine.Provisioning.DiskRandomAccess</S>
+          <S>VirtualMachine.Provisioning.DiskRandomRead</S>
+          <S>VirtualMachine.Provisioning.FileRandomAccess</S>
+          <S>VirtualMachine.Provisioning.GetVmFiles</S>
+          <S>VirtualMachine.Provisioning.MarkAsTemplate</S>
+          <S>VirtualMachine.Provisioning.MarkAsVM</S>
+          <S>VirtualMachine.Provisioning.ModifyCustSpecs</S>
+          <S>VirtualMachine.Provisioning.PromoteDisks</S>
+          <S>VirtualMachine.Provisioning.PutVmFiles</S>
+          <S>VirtualMachine.Provisioning.ReadCustSpecs</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">377374337</I32>
+      <S N="Name">Site Administrator</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=377374337/</S>
+      <Obj N="ExtensionData" RefId="39">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">377374337</I32>
+          <B N="System">false</B>
+          <S N="Name">Site Administrator</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="38" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="40">
+    <TNRef RefId="0" />
+    <ToString>Tier 1 Support</ToString>
+    <Props>
+      <S N="Description">Tier 1 Support</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="41">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Global.ManageCustomFields</S>
+          <S>Global.SetCustomField</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">380641179</I32>
+      <S N="Name">Tier 1 Support</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=380641179/</S>
+      <Obj N="ExtensionData" RefId="42">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">380641179</I32>
+          <B N="System">false</B>
+          <S N="Name">Tier 1 Support</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="41" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="43">
+    <TNRef RefId="0" />
+    <ToString>Tier 2 Support</ToString>
+    <Props>
+      <S N="Description">Tier 2 Support</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="44">
+        <TNRef RefId="1" />
+        <LST>
+          <S>Datastore.Browse</S>
+          <S>Global.CancelTask</S>
+          <S>Global.ManageCustomFields</S>
+          <S>Global.SetCustomField</S>
+          <S>ScheduledTask.Create</S>
+          <S>ScheduledTask.Delete</S>
+          <S>ScheduledTask.Edit</S>
+          <S>ScheduledTask.Run</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+          <S>VirtualMachine.Interact.AnswerQuestion</S>
+          <S>VirtualMachine.Interact.ConsoleInteract</S>
+          <S>VirtualMachine.Interact.DeviceConnection</S>
+          <S>VirtualMachine.Interact.PowerOff</S>
+          <S>VirtualMachine.Interact.PowerOn</S>
+          <S>VirtualMachine.Interact.Reset</S>
+          <S>VirtualMachine.Interact.SetCDMedia</S>
+          <S>VirtualMachine.Interact.ToolsInstall</S>
+          <S>VirtualMachine.State.CreateSnapshot</S>
+          <S>VirtualMachine.State.RemoveSnapshot</S>
+          <S>VirtualMachine.State.RenameSnapshot</S>
+          <S>VirtualMachine.State.RevertToSnapshot</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">602233601</I32>
+      <S N="Name"> Tier 2 Support</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=602233601/</S>
+      <Obj N="ExtensionData" RefId="45">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">602233601</I32>
+          <B N="System">false</B>
+          <S N="Name"> Tier 2 Support</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="44" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+  <Obj RefId="46">
+    <TNRef RefId="0" />
+    <ToString>com.vmware.Content.Admin</ToString>
+    <Props>
+      <S N="Description">Provides full access to Content Library service</S>
+      <B N="IsSystem">false</B>
+      <Obj N="PrivilegeList" RefId="47">
+        <TNRef RefId="1" />
+        <LST>
+          <S>ContentLibrary.AddLibraryItem</S>
+          <S>ContentLibrary.AddSubscription</S>
+          <S>ContentLibrary.CreateLocalLibrary</S>
+          <S>ContentLibrary.CreateSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteLibraryItem</S>
+          <S>ContentLibrary.DeleteLocalLibrary</S>
+          <S>ContentLibrary.DeleteSubscribedLibrary</S>
+          <S>ContentLibrary.DeleteSubscription</S>
+          <S>ContentLibrary.DownloadSession</S>
+          <S>ContentLibrary.EvictLibraryItem</S>
+          <S>ContentLibrary.EvictSubscribedLibrary</S>
+          <S>ContentLibrary.GetConfiguration</S>
+          <S>ContentLibrary.ProbeSubscription</S>
+          <S>ContentLibrary.PublishLibrary</S>
+          <S>ContentLibrary.PublishLibraryItem</S>
+          <S>ContentLibrary.ReadStorage</S>
+          <S>ContentLibrary.SyncLibrary</S>
+          <S>ContentLibrary.SyncLibraryItem</S>
+          <S>ContentLibrary.TypeIntrospection</S>
+          <S>ContentLibrary.UpdateConfiguration</S>
+          <S>ContentLibrary.UpdateLibrary</S>
+          <S>ContentLibrary.UpdateLibraryItem</S>
+          <S>ContentLibrary.UpdateLocalLibrary</S>
+          <S>ContentLibrary.UpdateSession</S>
+          <S>ContentLibrary.UpdateSubscribedLibrary</S>
+          <S>ContentLibrary.UpdateSubscription</S>
+          <S>System.Anonymous</S>
+          <S>System.Read</S>
+          <S>System.View</S>
+        </LST>
+      </Obj>
+      <S N="ServerId">/VIServer=vsphere.local\administrator@192.168.1.4:443/</S>
+      <Ref N="Server" RefId="2" />
+      <I32 N="Id">1048009416</I32>
+      <S N="Name">com.vmware.Content.Admin</S>
+      <S N="Uid">/VIServer=vsphere.local\administrator@192.168.1.4:443/Role=1048009416/</S>
+      <Obj N="ExtensionData" RefId="48">
+        <TNRef RefId="3" />
+        <ToString>VMware.Vim.AuthorizationRole</ToString>
+        <Props>
+          <I32 N="RoleId">1048009416</I32>
+          <B N="System">false</B>
+          <S N="Name">com.vmware.Content.Admin</S>
+          <S N="Info">VMware.Vim.Description</S>
+          <Ref N="Privilege" RefId="47" />
+        </Props>
+      </Obj>
+    </Props>
+  </Obj>
+</Objs>

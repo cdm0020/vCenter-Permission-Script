@@ -1,0 +1,101 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Selected.System.String</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">Admin</S>
+      <S N="Principal">VSPHERE.LOCAL\vpxd-0da4a752-8f2d-4375-b9e0-43d2833f943d</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="1">
+        <TN RefId="1">
+          <T>VMware.VimAutomation.ViCore.Types.V1.Inventory.FolderType</T>
+          <T>System.Enum</T>
+          <T>System.ValueType</T>
+          <T>System.Object</T>
+        </TN>
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="2">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">Admin</S>
+      <S N="Principal">VSPHERE.LOCAL\vpxd-extension-0da4a752-8f2d-4375-b9e0-43d2833f943d</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="3">
+        <TNRef RefId="1" />
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="4">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">vSphere Client Solution User</S>
+      <S N="Principal">VSPHERE.LOCAL\vsphere-webclient-0da4a752-8f2d-4375-b9e0-43d2833f943d</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="5">
+        <TNRef RefId="1" />
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="6">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">Admin</S>
+      <S N="Principal">VSPHERE.LOCAL\Administrator</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="7">
+        <TNRef RefId="1" />
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="8">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">Admin</S>
+      <S N="Principal">VSPHERE.LOCAL\Administrators</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="9">
+        <TNRef RefId="1" />
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+  <Obj RefId="10">
+    <TNRef RefId="0" />
+    <MS>
+      <S N="entity">Datacenters</S>
+      <S N="type">Folder</S>
+      <S N="Role">AutoUpdateUser</S>
+      <S N="Principal">VSPHERE.LOCAL\AutoUpdate</S>
+      <B N="Propagate">true</B>
+      <Obj N="folderType" RefId="11">
+        <TNRef RefId="1" />
+        <ToString>Datacenter</ToString>
+        <I32>17</I32>
+      </Obj>
+    </MS>
+  </Obj>
+</Objs>
